@@ -53,16 +53,16 @@ body {
 
     /* background image options */
     --background-image: on; /* off: no background image, on: enable background image (must set url variable below) */
-    --background-image-url: url('https://raw.githubusercontent.com/KomaZ05u/midnight-discord-omaomacustom/refs/heads/master/bd764bb25d49a05105060185774ba14cd2c846f7.jpg'); /* url of the background image */
+    --background-image-url: url('https://raw.githubusercontent.com/KomaZ05u/midnight-discord-omaomacustom/refs/heads/master/wallpaper.png'); /* url of the background image */
 
     /* transparency/blur options */
     /* NOTE: TO USE TRANSPARENCY/BLUR, YOU MUST HAVE TRANSPARENT BG COLORS. FOR EXAMPLE: --bg-4: hsla(220, 15%, 10%, 0.7); */
     --transparency-tweaks: on; /* off: no changes, on: remove some elements for better transparency */
     --remove-bg-layer: off; /* off: no changes, on: remove the base --bg-3 layer for use with window transparency (WILL OVERRIDE BACKGROUND IMAGE) */
     --panel-blur: on; /* off: no changes, on: blur the background of panels */
-    --blur-amount: 12px; /* amount of blur */
-    --bg-floating: hsla(220, 15%, 13%, 0.9); /* set this to a more opaque color if floating panels look too transparent. only applies if panel blur is on  */
-
+    --blur-amount: 4px; /* amount of blur default 12*/
+    --bg-floating: hsl(220, 15%, 13%, 0.9); /* set this to a more opaque color if floating panels look too transparent. only applies if panel blur is on  */
+    /* 220, 15%, 13%, 0.9 */
     /* chatbar options */
     --custom-chatbar: separated; /* off: default chatbar, separated: chatbar separated from chat */
     --chatbar-height: 56px; /* height of the chatbar (56px by default, 47px to align with user panel, 56px recommended for separated) */
@@ -76,18 +76,19 @@ body {
     --colors: on; /* off: discord default colors, on: midnight custom colors */
 
     /* text colors */
-    --text-0: hsla(220, 15%, 10%, 1); /* text on colored elements */
+    --text-0: rgb(255, 255, 255); /* text on colored elements */
     --text-1: hsl(220, 45%, 95%); /* other normally white text */
-    --text-2: hsl(220, 25%, 85%); /* headings and important text */
-    --text-3: hsl(220, 20%, 70%); /* normal text */
-    --text-4: hsl(220, 15%, 50%); /* icon buttons and channels */
-    --text-5: hsl(220, 15%, 35%); /* muted channels/chats and timestamps */
+    --text-2: hsl(0, 0%, 100%); /* headings and important text */
+    --text-3: hsl(0, 0%, 100%); /* normal text */
+    --text-4: hsl(0, 0%, 100%); /* icon buttons and channels */
+    --text-5: hsl(0, 0%, 100%); /* muted channels/chats and timestamps */
 
     /* background and dark colors */
     --bg-1: hsla(220, 15%, 20%, 0.6); /* dark buttons when clicked */
     --bg-2: hsla(220, 15%, 16%, 0.6); /* dark buttons */
     --bg-3: hsla(220, 15%, 13%, 0.6); /* spacing, secondary elements */
-    --bg-4: hsla(220, 15%, 10%, 0.6); /* main background color */
+    --bg-4: hsla(0, 0%, 100%, 0.082); /* main background color */
+    /* --bg-4: hsla(220, 15%, 10%, 0.6); main background color */
     --hover: hsla(221, 19%, 40%, 0.1); /* channels and buttons when hovered */
     --active: hsla(220, 19%, 40%, 0.2); /* channels and buttons when clicked or selected */
     --active-2: hsla(220, 19%, 40%, 0.3); /* extra state for transparent buttons */
@@ -95,13 +96,13 @@ body {
 
     /* accent colors */
     --accent-1: var(--blue-1); /* links and other accent text */
-    --accent-2: var(--blue-2); /* small accent elements */
+    --accent-2: var(--green-3); /* small accent elements */
     --accent-3: var(--blue-3); /* accent buttons */
     --accent-4: var(--blue-4); /* accent buttons when hovered */
     --accent-5: var(--blue-5); /* accent buttons when clicked */
-    --accent-new: var(--accent-2); /* stuff that's normally red like mute/deafen buttons */
-    --mention: linear-gradient(to right, color-mix(in hsl, var(--accent-2), transparent 90%) 40%, transparent); /* background of messages that mention you */
-    --mention-hover: linear-gradient(to right, color-mix(in hsl, var(--accent-2), transparent 95%) 40%, transparent); /* background of messages that mention you when hovered */
+    --accent-new: var(--red-4); /* stuff that's normally red like mute/deafen buttons */
+    --mention: linear-gradient(to right, color-mix(in hsl, var(--yellow-3), transparent 60%) 100%, transparent); /*background of messages that mention you */
+    --mention-hover: linear-gradient(to right, color-mix(in hsl, var(--yellow-1), transparent 60%) 100%, transparent); /* background of messages that mention you when hovered */
     --reply: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 90%) 40%, transparent); /* background of messages that reply to you */
     --reply-hover: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 95%) 40%, transparent); /* background of messages that reply to you when hovered */
 
@@ -114,9 +115,10 @@ body {
 
     /* border colors */
     --border-light: var(--hover); /* general light border color */
-    --border: var(--active); /* general normal border color */
-    --border-hover: var(--active); /* border color of panels when hovered */
-    --button-border: hsl(220, 0%, 100%, 0.1); /* neutral border color of buttons */
+    --border: hsla(0, 0%, 100%, 0.322); /* general normal border color */
+    --border-hover: hsla(0, 0%, 100%, 0.322);; /* border color of panels when hovered */
+    --button-border: hsla(220, 0%, 100%, 0.1); /* neutral border color of buttons */
+    /* --button-border: hsl(220, 0%, 100%, 0.1); */
 
     /* base colors */
     --red-1: oklch(75% 0.12 0);
